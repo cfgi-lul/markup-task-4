@@ -1,0 +1,75 @@
+.cat-info
+{
+    border: solid #616161 5px;
+    width: 350px;
+    height: 500px;
+    display: inline-block;
+    padding: 0;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
+    font-size: 20px;
+}
+
+.name
+{
+    font-size: 35px;
+}
+
+.img,
+.img2
+{
+    width: 30px;
+    height: 30px;
+}
+
+input:checked ~ label .img2,
+input,
+.img
+{
+    display: none;
+}
+
+input:checked ~ label .img
+{
+    display: inline;
+}
+
+.information
+{
+    text-align: left;
+    white-space: nowrap;
+    width: 350px;
+    height: 230px;
+    overflow: hidden;
+}
+
+section
+{
+    text-align: center;
+}
+
+.cat-photo
+{
+    width: 350px;
+    object-fit: cover;
+}
+
+input:checked ~ .content .cat-info
+{
+    display: grid;
+}
+
+input:checked ~ .content .cat-info .information
+{
+    white-space: normal;
+    overflow: auto;
+}
+
+fieldset:hover
+{
+    box-shadow: 0 0 15px #000;
+    transform: scale(1.05);
+    transition: transform .4s ease-in-out;
+}
