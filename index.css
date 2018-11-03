@@ -17,21 +17,21 @@
     font-size: 35px;
 }
 
-.img,
-.img2
+.horizontal-button,
+.vertical-button
 {
     width: 30px;
     height: 30px;
 }
 
-input:checked ~ label .img2,
+input:checked ~ label .vertical-button,
 input,
-.img
+.horizontal-button
 {
     display: none;
 }
 
-input:checked ~ label .img
+input:checked ~ label .horizontal-button
 {
     display: inline;
 }
@@ -52,6 +52,7 @@ section
 
 .cat-photo
 {
+    height: 262px;
     width: 350px;
     object-fit: cover;
 }
@@ -67,7 +68,7 @@ input:checked ~ .content .cat-info .information
     overflow: auto;
 }
 
-fieldset:hover
+.cat-info:hover
 {
     box-shadow: 0 0 15px #000;
     transform: scale(1.05);
